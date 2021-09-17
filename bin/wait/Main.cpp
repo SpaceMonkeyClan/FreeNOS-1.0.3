@@ -1,5 +1,3 @@
-// Main.cpp
-
 #include "Wait.h"
 
 int main(int argc, char** argv) {

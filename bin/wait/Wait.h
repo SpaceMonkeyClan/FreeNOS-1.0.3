@@ -1,5 +1,3 @@
-// Wait.h
-
 #ifndef __BIN_SLEEP_SLEEP_H
 #define __BIN_SLEEP_SLEEP_H
 

@@ -1,5 +1,3 @@
-# SConscript
-
 Import('build_env')
 
 env = build_env.Clone()
