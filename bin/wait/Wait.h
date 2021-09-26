@@ -1,5 +1,5 @@
-#ifndef __BIN_SLEEP_SLEEP_H
-#define __BIN_SLEEP_SLEEP_H
+#ifndef __BIN_WAIT_WAIT_H
+#define __BIN_WAIT_WAIT_H
 
 #include <POSIXApplication.h>
 
@@ -40,4 +40,4 @@ public:
  * @}
  */
 
-#endif /* __BIN_SLEEP_SLEEP_H */
+#endif /* __BIN_WAIT_WAIT_H */
