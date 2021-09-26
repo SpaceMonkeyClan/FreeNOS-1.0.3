@@ -1,5 +1,6 @@
-#ifndef __BIN_WAIT_WAIT_H
-#define __BIN_WAIT_WAIT_H
+/**
+#ifndef __BIN_Renice_Renice_H
+#define __BIN_Renice_Renice_H
 
 #include <POSIXApplication.h>
 
@@ -11,7 +12,7 @@
  /**
   * Stop executing for some time.
   */
-class Wait : public POSIXApplication
+class Renice : public POSIXApplication
 {
 public:
 
@@ -21,12 +22,12 @@ public:
      * @param argc Argument count
      * @param argv Argument values
      */
-    Wait(int argc, char** argv);
+    Renice(int argc, char** argv);
 
     /**
      * Destructor
      */
-    virtual ~Wait();
+    virtual ~Renice();
 
     /**
      * Execute the application.
@@ -40,4 +41,5 @@ public:
  * @}
  */
 
-#endif /* __BIN_WAIT_WAIT_H */
+#endif /* __BIN_SLEEP_SLEEP_H */
+**/
