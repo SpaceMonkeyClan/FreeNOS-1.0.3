@@ -51,6 +51,9 @@ Sleep::Result Sleep::exec()
         return IOError;
     }
 
+    // Output status when finished
+    output("\nDone Sleeping");
+
     // Done
     return Success;
 }
