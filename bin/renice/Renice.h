@@ -1,4 +1,3 @@
-/**
 #ifndef __BIN_Renice_Renice_H
 #define __BIN_Renice_Renice_H
 
@@ -41,5 +40,4 @@ public:
  * @}
  */
 
-#endif /* __BIN_SLEEP_SLEEP_H */
-**/
+#endif /* __BIN_RENICE_RENICE_H */

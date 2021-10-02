@@ -1,4 +1,3 @@
-/**
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -6,7 +5,7 @@
 #include <unistd.h>
 #include <Process.h>
 #include <ProcessManager.h>
-#include <sys/Renice.h>
+//#include <sys/Renice.h>
 #include "Renice.h"
 
 Renice::Renice(int argc, char** argv) : POSIXApplication(argc, argv)
@@ -29,11 +28,10 @@ Renice::Result Renice::exec() {
 		return InvalidArgument;
 	}
 
-	success = renicepid(arg_id, &store_result, 0);
+	//success = renicepid(arg_id, &store_result, 0);
 	if (!success) {
 		ERROR("Could not renice for " << arguments().get("PROCESS_ID") << "'");
 		return TimedOut;
 	}
 	return Success;
 }
-**/
