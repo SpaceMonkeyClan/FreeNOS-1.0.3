@@ -71,19 +71,6 @@ class Process
         Stopped
     };
 
-    /**
-     * Represents the Priority Level state of the Process
-     * (Where lowest # has highest priority and vice versa)
-     */
-    enum PriorityLevel
-    {
-        Min = 1,
-        Low = 2,
-        Normal = 3,
-        High = 4,
-        Max = 5
-    };
-
   public:
 
     /**
