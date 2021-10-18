@@ -13,6 +13,10 @@
 // Process client header(C:/FreeNOS-1.0.3/lib/libruntime/ProcessClient.h)
 #include <ProcessClient.h>
 
+// Declared variables within the scope
+int newPriority;
+int processID;
+
 Renice::Renice(int argc, char** argv) : POSIXApplication(argc, argv)
 {
 	parser().setDescription("Renice for a state change within the process");
@@ -31,8 +35,8 @@ Renice::~Renice()
 // Execution method, performs system call on renicePID using user-provided Process ID.
 Renice::Result Renice::exec()
 {
-    printf("processID = %d\n", processID);
-    printf("newPriority = %d\n", newPriority);
+    printf("\nProcess ID is: %d\n", processID);
+    printf("\nNew set Priority is: %d\n", newPriority);
     bool result;
     ProcessClient process;
 
@@ -40,24 +44,24 @@ Renice::Result Renice::exec()
     if (newPriority < 1 || newPriority > 5)
 	{
         result = false;
-        printf("Invalid new set priority.\n");
+        printf("\nPriority value of %d is invalid. ", newPriority);
     }
 	// If check is false (valid)
     else
 	{
         process.setPriority(processID, newPriority);
         result = true;
-        printf("Validated Priority.\n");
+        printf("\nPriority value of %d is valid. ", newPriority);
     }
     
     // Print result prompt after check
     if (result == true)
 	{
-        printf("Priority has been changed.\n");
+        printf("Process %d priority has now been changed.\n", processID);
     }
     else
 	{
-        printf("Priority has NOT been changed.\n");
+        printf("Process %d priority has NOT been changed.\n", processID);
     }
 
     return Success;
