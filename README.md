@@ -1,4 +1,4 @@
-# CS 4310.01 Project #2 Submission - Wait For It...
+# CS 4310.01 Project #3 Submission - Prioritize It
 
 1.) **Full Names:**
    - Rene Dena
