@@ -39,6 +39,11 @@ void ProcessClient::setPriority(ProcessID pid, int newPriority)
     ProcessCtl(pid, RenicePID, newPriority);
 }
 
+void ProcessClient::killProcess(ProcessID pid)
+{
+    ProcessCtl(pid, KillPID);
+}
+
 ProcessClient::Result ProcessClient::processInfo(const ProcessID pid,
                                                  ProcessClient::Info &info) const
 {

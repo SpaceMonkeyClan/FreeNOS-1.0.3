@@ -199,6 +199,7 @@ Log & operator << (Log &log, ProcessOperation op)
     switch (op)
     {
         case Spawn:     log.append("Spawn"); break;
+        // Added case for Killed PID
         case KillPID:   log.append("KillPID"); break;
         case GetPID:    log.append("GetPID"); break;
         case GetParent: log.append("GetParent"); break;

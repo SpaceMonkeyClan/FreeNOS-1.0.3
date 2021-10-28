@@ -87,6 +87,8 @@ class ProcessClient
 
     void setPriority(ProcessID pid, int newPriority);
 
+    void killProcess(ProcessID pid);
+
     /**
      * Get process information by its ID.
      *
