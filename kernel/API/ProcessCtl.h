@@ -37,6 +37,7 @@
 typedef enum ProcessOperation
 {
     Spawn = 0,
+    // enum operation of PID killed
     KillPID,
     GetPID,
     GetParent,
